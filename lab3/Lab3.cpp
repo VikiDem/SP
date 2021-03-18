@@ -11,11 +11,11 @@ double cc(double amount, double kinds__of__coins);
 double denomination__list(double  kinds__of__coins);
 double GR__AMOUNT();
 
-// вариант - номер в писке группы
+// РІР°СЂРёР°РЅС‚ - РЅРѕРјРµСЂ РІ РїРёСЃРєРµ РіСЂСѓРїРїС‹
 double VARIANT = 8.;
-// последняя цифра номера группы
+// РїРѕСЃР»РµРґРЅСЏСЏ С†РёС„СЂР° РЅРѕРјРµСЂР° РіСЂСѓРїРїС‹
 double LAST__DIGIT__OF__GROUP__NUMBER = 6.;
-//количество имеющихся номинмалов монет
+//РєРѕР»РёС‡РµСЃС‚РІРѕ РёРјРµСЋС‰РёС…СЃСЏ РЅРѕРјРёРЅРјР°Р»РѕРІ РјРѕРЅРµС‚
 double KINDS__OF__COINS = 6.;
 
 double first__denomination(double kinds__of__coins) {
@@ -57,7 +57,7 @@ double count__change(double amount) {
 }
 
 bool pier_Q(bool x_Q, bool y_Q) {
-	// стрелка Пирса
+	// СЃС‚СЂРµР»РєР° РџРёСЂСЃР°
 	return !(x_Q || y_Q);
 }
 
