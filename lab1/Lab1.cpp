@@ -6,9 +6,9 @@ extern double mm;
 extern double yyyy;
 
 double day__of__week();
-double zeller(int d, int m, int y, int c);
-double neg__to__pos(int d);
-double birthday(int dw);
+double zeller(double d, double m, double y, double c);
+double neg__to__pos(double d);
+double birthday(double dw);
 
 
 double day__of__week() {
@@ -20,18 +20,18 @@ double day__of__week() {
 
 }
 
-double zeller(int d, int m, int y, int c) {
+double zeller(double d, double m, double y, double c) {
 	return neg__to__pos(remainder(d + y + quotient(26 * m - 2, 10) + quotient(y, 4) + quotient(c, 4), 7));
 }
 
-double neg__to__pos(int d) {
+double neg__to__pos(double d) {
 	return (d < 0. ? d + 7.
 		: true ? d
 		: _infinity
 		);
 }
 
-double birthday(int dw) {
+double birthday(double dw) {
 	display("Your were born on ");
 	display(dw == 1. ? "Monday "
 		: dw == 2. ? "Tuesday "
